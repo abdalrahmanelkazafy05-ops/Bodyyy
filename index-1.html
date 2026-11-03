@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdalrahman Elkazafy</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background: linear-gradient(-45deg, #0f172a, #1e3a8a, #7c3aed, #06b6d4);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+   
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:90%;
+    max-width:350px;
+    color:white;
+    animation:floatCard 3s ease-in-out infinite,
+              fadeIn 1s ease;
+}
+h1{
+   
+
+    font-size:32px;
+    background:linear-gradient(to right,#60a5fa,#a855f7);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+  
+}
+
+
+
+p{
+    color:#120101;
+}
+a{
+    display:block;
+    margin:12px 0;
+    padding:14px;
+    background:linear-gradient(45deg,#2563eb,#7c3aed);
+    color:white;
+    text-decoration:none;
+    border-radius:15px;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:all 0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+.profile{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid white;
+    margin-bottom:15px;
+    transition:0.4s;
+    cursor:pointer;
+
+    .profile:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px rgba(255,255,255,0.7);
+}
+}
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+a:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 10px 25px rgba(124,58,237,0.6);
+    background:linear-gradient(45deg,#7c3aed,#06b6d4);
+}
+
+.facebook{
+    background:linear-gradient(45deg,#1877f2,#60a5fa);
+}
+
+.instagram{
+    background:linear-gradient(45deg,#e1306c,#f77737);
+}
+
+.whatsapp{
+    background:linear-gradient(45deg,#25d366,#128c7e);
+}
+
+
+
+
+</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<body>
+
+<div class="card">
+
+    <a href="image.jpeg" target="_blank">
+    <img src="image.jpeg" alt="My Photo" class="profile">
+</a>
+
+    <h1>Abdalrahman Elkazafy</h1>
+
+    <p>
+        I'm Abdalrahman Elkazafy, a future developer with a passion for technology and innovation.
+        My goal is to build creative digital projects and continuously improve my skills.
+    </p>
+<a class="facebook" href="https://www.facebook.com/share/1V69PBCnsz/?mibextid=wwXIfr" target="_blank">
+    <i class="fab fa-facebook-f"></i> Facebook
+</a>
+
+<a class="instagram" href="https://www.instagram.com/abdalrahma__00" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+</a>
+
+<a class="whatsapp" href="https://wa.me/201013124902" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+</div>
+</body>
+</html>
